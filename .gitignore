@@ -14,9 +14,6 @@ dist/
 # Vercel
 .vercel/
 
-# Build outputs (keep crm-dist and www-dist out — they're build artifacts)
-backend/crm-dist/
-backend/www-dist/
 backend/naaz_resort.db
 
 # Misc
