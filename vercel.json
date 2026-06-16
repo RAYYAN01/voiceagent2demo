@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "backend/api/index.py" },
+    { "src": "/crm", "dest": "backend/api/index.py" },
+    { "src": "/crm/(.*)", "dest": "backend/api/index.py" },
+    { "src": "/health", "dest": "backend/api/index.py" },
+    { "src": "/seed/(.*)", "dest": "backend/api/index.py" },
+    { "src": "/assets/(.*)", "dest": "backend/api/index.py" },
+    { "src": "/(.*)", "dest": "backend/api/index.py" }
+  ]
+}
